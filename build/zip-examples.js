@@ -27,17 +27,43 @@ sh.cd(path.join(__dirname, '..'))
 
 // remove any previously created folder with the same name
 sh.rm('-rf', folderName)
+
 // create any folders so that `cp` works
 sh.mkdir('-p', folderName)
 sh.mkdir('-p', `${folderName}/assets/brand/`)
+sh.mkdir('-p', `${folderName}/assets/dist/css/`)
+sh.mkdir('-p', `${folderName}/assets/dist/js/`)
 
 sh.cp('-Rf', `_gh_pages/docs/${versionShort}/examples/*`, folderName)
-sh.cp('-Rf', `_gh_pages/docs/${versionShort}/dist/`, `${folderName}/assets/`)
-// also copy the two brand images we use in the examples
-sh.cp('-f', [
-  `_gh_pages/docs/${versionShort}/assets/brand/bootstrap-logo.svg`,
-  `_gh_pages/docs/${versionShort}/assets/brand/bootstrap-logo-white.svg`
-], `${folderName}/assets/brand/`)
+
+// these are the files we need in the examples
+const cssFiles = [
+  'bootstrap.min.css',
+  'bootstrap.min.css.map',
+  'bootstrap.rtl.min.css',
+  'bootstrap.rtl.min.css.map'
+]
+const jsFiles = [
+  'bootstrap.bundle.min.js',
+  'bootstrap.bundle.min.js.map'
+]
+const imgFiles = [
+  'bootstrap-logo.svg',
+  'bootstrap-logo-white.svg'
+]
+
+cssFiles.forEach(file => {
+  sh.cp('-f', `_gh_pages/docs/${versionShort}/dist/css/${file}`, `${folderName}/assets/dist/css/`)
+})
+
+jsFiles.forEach(file => {
+  sh.cp('-f', `_gh_pages/docs/${versionShort}/dist/js/${file}`, `${folderName}/assets/dist/js/`)
+})
+
+imgFiles.forEach(file => {
+  sh.cp('-f', `_gh_pages/docs/${versionShort}/assets/brand/${file}`, `${folderName}/assets/brand/`)
+})
+
 sh.rm(`${folderName}/index.html`)
 
 // get all examples' HTML files
