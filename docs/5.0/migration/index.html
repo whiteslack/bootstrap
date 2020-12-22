@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Track and review changes to the Bootstrap source files, documentation, and components to help you migrate from v4 to v5.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.79.0">
+<meta name="generator" content="Hugo 0.79.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.0">
@@ -17,7 +17,7 @@
 
 
 <!-- Bootstrap core CSS -->
-<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-V7EAyB2+d6g61zWKSgRVgugVliVQBkK4qS6i/P3KNfM8+gCPSaM0ZT3xMev1sqhQ" crossorigin="anonymous">
 
 <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
 
@@ -59,10 +59,10 @@
 
   </head>
   <body>
-    <div class="skippy overflow-hidden">
+    <div class="skippy visually-hidden-focusable overflow-hidden">
   <div class="container-xl">
-    <a class="visually-hidden-focusable d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
-    <a class="visually-hidden-focusable d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
   </div>
 </div>
 
@@ -74,9 +74,10 @@
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <svg class="bi" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
     </button>
 
     <div class="collapse navbar-collapse" id="bdNavbar">
@@ -160,12 +161,12 @@
 
 
     <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
   <title>Expand</title>
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/>
 </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
   <title>Collapse</title>
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"/>
 </svg>
@@ -395,23 +396,33 @@
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
           <nav id="TableOfContents">
   <ul>
+    <li><a href="#v500-beta2">v5.0.0-beta2</a>
+      <ul>
+        <li><a href="#sass">Sass</a>
+          <ul>
+            <li><a href="#utilities">Utilities</a></li>
+          </ul>
+        </li>
+        <li><a href="#javascript">JavaScript</a></li>
+      </ul>
+    </li>
     <li><a href="#v500-beta1">v5.0.0-beta1</a>
       <ul>
         <li><a href="#rtl">RTL</a>
           <ul>
-            <li><a href="#sass">Sass</a>
+            <li><a href="#sass-1">Sass</a>
               <ul>
                 <li><a href="#components">Components</a></li>
-                <li><a href="#utilities">Utilities</a></li>
+                <li><a href="#utilities-1">Utilities</a></li>
                 <li><a href="#mixins">Mixins</a></li>
                 <li><a href="#variables">Variables</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#javascript">JavaScript</a></li>
-        <li><a href="#sass-1">Sass</a></li>
-        <li><a href="#utilities-1">Utilities</a></li>
+        <li><a href="#javascript-1">JavaScript</a></li>
+        <li><a href="#sass-2">Sass</a></li>
+        <li><a href="#utilities-2">Utilities</a></li>
         <li><a href="#components-1">Components</a>
           <ul>
             <li><a href="#breadcrumbs">Breadcrumbs</a></li>
@@ -423,16 +434,16 @@
     <li><a href="#v500-alpha3">v5.0.0-alpha3</a>
       <ul>
         <li><a href="#browser-support">Browser support</a></li>
-        <li><a href="#sass-2">Sass</a></li>
+        <li><a href="#sass-3">Sass</a></li>
         <li><a href="#reboot">Reboot</a></li>
         <li><a href="#buttons">Buttons</a></li>
         <li><a href="#forms">Forms</a></li>
-        <li><a href="#utilities-2">Utilities</a></li>
+        <li><a href="#utilities-3">Utilities</a></li>
       </ul>
     </li>
     <li><a href="#v500-alpha2">v5.0.0-alpha2</a>
       <ul>
-        <li><a href="#sass-3">Sass</a></li>
+        <li><a href="#sass-4">Sass</a></li>
         <li><a href="#docs">Docs</a></li>
         <li><a href="#layout">Layout</a></li>
         <li><a href="#reboot-1">Reboot</a></li>
@@ -454,14 +465,14 @@
           </ul>
         </li>
         <li><a href="#helpers">Helpers</a></li>
-        <li><a href="#utilities-3">Utilities</a></li>
+        <li><a href="#utilities-4">Utilities</a></li>
       </ul>
     </li>
     <li><a href="#v500-alpha1">v5.0.0-alpha1</a>
       <ul>
         <li><a href="#browser-support-1">Browser support</a></li>
-        <li><a href="#sass-4">Sass</a></li>
-        <li><a href="#javascript-1">JavaScript</a></li>
+        <li><a href="#sass-5">Sass</a></li>
+        <li><a href="#javascript-2">JavaScript</a></li>
         <li><a href="#color-system">Color system</a></li>
         <li><a href="#grid-and-layout">Grid and layout</a></li>
         <li><a href="#content-reboot-etc">Content, Reboot, etc</a></li>
@@ -482,7 +493,7 @@
           </ul>
         </li>
         <li><a href="#accessibility">Accessibility</a></li>
-        <li><a href="#utilities-4">Utilities</a></li>
+        <li><a href="#utilities-5">Utilities</a></li>
         <li><a href="#grid">Grid</a></li>
         <li><a href="#misc">Misc</a></li>
         <li><a href="#docs-1">Docs</a></li>
@@ -497,20 +508,32 @@
       <div class="bd-content ps-lg-4">
         
 
-        <h2 id="v500-beta1">v5.0.0-beta1</h2>
+        <h2 id="v500-beta2">v5.0.0-beta2</h2>
+<h3 id="sass">Sass</h3>
+<h4 id="utilities">Utilities</h4>
+<ul>
+<li>Extended the <code>.visually-hidden-focusable</code> helper to also work on containers, using <code>:focus-within</code>.</li>
+<li><code>bootstrap-utilities.css</code> now also includes our helpers. Helpers don&rsquo;t need to be imported in custom builds anymore.</li>
+<li>Extended form validation states customization capabilities. Added three new optional parameters to the <code>form-validation-state</code> mixin: <code>tooltip-color</code>, <code>tooltip-bg-color</code>, <code>focus-box-shadow</code>. These parameters can be set in the <code>$form-validation-states</code> map. <a href="https://github.com/twbs/bootstrap/pull/31757">See #31757</a>.</li>
+</ul>
+<h3 id="javascript">JavaScript</h3>
+<ul>
+<li>The default value for the <code>fallbackPlacements</code> is changed to <code>['top', 'right', 'bottom', 'left']</code> for better placement of popper elements.</li>
+</ul>
+<h2 id="v500-beta1">v5.0.0-beta1</h2>
 <h3 id="rtl">RTL</h3>
 <p><strong>The RTL feature is still experimental and will probably evolve according to user feedback.</strong> Spotted something or have an improvement to suggest? <a href="https://github.com/twbs/bootstrap/issues/new">Open an issue</a>, we&rsquo;d love to get your insights.</p>
-<h4 id="sass">Sass</h4>
+<h4 id="sass-1">Sass</h4>
 <p>Horizontal direction sensitive variables, utilities and mixins are renamed with more logical names — <code>start</code> and <code>end</code> in lieu of <code>left</code> and <code>right</code>.</p>
 <h5 id="components">Components</h5>
 <ul>
-<li>Renamed <code>.dropleft</code> and <code>.dropright</code> to <code>.dropstart</code> and <code>dropend</code>.</li>
+<li>Renamed <code>.dropleft</code> and <code>.dropright</code> to <code>.dropstart</code> and <code>.dropend</code>.</li>
 <li>Renamed <code>.dropdown-menu-*-left</code> and <code>.dropdown-menu-*-right</code> to <code>.dropdown-menu-*-start</code> and <code>.dropdown-menu-*-end</code>.</li>
 <li>Renamed <code>.bs-popover-left</code> and <code>.bs-popover-right</code> to <code>.bs-popover-start</code> and <code>.bs-popover-end</code>.</li>
 <li>Renamed <code>.bs-tooltip-left</code> and <code>.bs-tooltip-right</code> to <code>.bs-tooltip-start</code> and <code>.bs-tooltip-end</code>.</li>
 <li>Renamed <code>.carousel-item-left</code> and <code>.carousel-item-right</code> to <code>.carousel-item-start</code> and <code>.carousel-item-end</code>.</li>
 </ul>
-<h5 id="utilities">Utilities</h5>
+<h5 id="utilities-1">Utilities</h5>
 <ul>
 <li>Renamed <code>.left-*</code> and <code>.right-*</code> to <code>.start-*</code> and <code>.end-*</code>.</li>
 <li>Renamed <code>.float-left</code> and <code>.float-right</code> to <code>.float-start</code> and <code>.float-end</code>.</li>
@@ -536,7 +559,7 @@
 <li>Renamed <code>$form-check-inline-margin-right</code> to <code>$form-check-inline-margin-end</code>.</li>
 <li>Renamed <code>$form-select-feedback-icon-padding-right</code> to <code>$form-select-feedback-icon-padding-end</code>.</li>
 </ul>
-<h3 id="javascript">JavaScript</h3>
+<h3 id="javascript-1">JavaScript</h3>
 <ul>
 <li>Data attributes for all JavaScript plugins are now namespaced to help distinguish Bootstrap functionality from third parties and your own code. For example, we use <code>data-bs-toggle</code> instead of <code>data-toggle</code>.</li>
 <li>Updated Popper to v2.x:
@@ -546,11 +569,11 @@
 </ul>
 </li>
 </ul>
-<h3 id="sass-1">Sass</h3>
+<h3 id="sass-2">Sass</h3>
 <ul>
 <li>Renamed <code>scale-color()</code> function to <code>shift-color()</code> to avoid collision with Sass&rsquo;s own color scaling function.</li>
 </ul>
-<h3 id="utilities-1">Utilities</h3>
+<h3 id="utilities-2">Utilities</h3>
 <ul>
 <li>Added new <code>.translate-middle-x</code> &amp; <code>.translate-middle-y</code> utilities to horizontally or vertically center absolute/fixed positioned elements.</li>
 </ul>
@@ -569,7 +592,7 @@
 <ul>
 <li>Dropped support for Microsoft Edge Legacy. See <a href="#browser-support-1">here</a> for the previous browser support changes.</li>
 </ul>
-<h3 id="sass-2">Sass</h3>
+<h3 id="sass-3">Sass</h3>
 <ul>
 <li>The color system which worked with <code>color-level()</code> and <code>$theme-color-interval</code> was removed in favor of a new color system. All <code>lighten()</code> and <code>darken()</code> functions in our codebase are replaced by <code>tint-color()</code> and <code>shade-color()</code>. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The <code>scale-color()</code> (changed to <code>shift-color()</code> in Beta 1) will either tint or shade a color depending on whether its weight parameter is positive or negative. <a href="https://github.com/twbs/bootstrap/pull/30622">See #30622</a> for more details.</li>
 <li>Spinners now honor <code>prefers-reduced-motion: reduce</code> by slowing down animations. <a href="https://github.com/twbs/bootstrap/pull/31882">See #31882</a>.</li>
@@ -589,7 +612,7 @@
 <li>File inputs now use the <code>.form-control</code> class and don&rsquo;t require JavaScript, additional HTML, or additional classes. <a href="https://github.com/twbs/bootstrap/pull/31955">See #31955</a>.</li>
 <li>Added <code>cursor:pointer</code> to <code>.form-control-color</code> color inputs.</li>
 </ul>
-<h3 id="utilities-2">Utilities</h3>
+<h3 id="utilities-3">Utilities</h3>
 <ul>
 <li><strong>Text utilities:</strong>
 <ul>
@@ -602,7 +625,7 @@
 <li>Added new <code>gap</code> utilities (<code>.gap</code>) for CSS Grid layouts</li>
 </ul>
 <h2 id="v500-alpha2">v5.0.0-alpha2</h2>
-<h3 id="sass-3">Sass</h3>
+<h3 id="sass-4">Sass</h3>
 <ul>
 <li>Added default parameters to each <code>border-radius</code> mixin. <a href="https://github.com/twbs/bootstrap/pull/31571">See #31571</a>.</li>
 <li>Updated the next breakpoint when targeting only the <code>xs</code> breakpoint. <a href="https://github.com/twbs/bootstrap/pull/31500">See #31500</a>.</li>
@@ -711,7 +734,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="utilities-3">Utilities</h3>
+<h3 id="utilities-4">Utilities</h3>
 <ul>
 <li><a href="https://github.com/twbs/bootstrap/pull/31280">#31280</a>: Added new <a href="/docs/5.0/utilities/position/#arrange-elements">position utilities</a> for <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>. Values include <code>0</code>, <code>50%</code>, and <code>100%</code> for each property.
 <ul>
@@ -738,7 +761,7 @@
 <li>Dropped support for Chrome &lt; 60</li>
 <li>Dropped support for Android &lt; 6</li>
 </ul>
-<h3 id="sass-4">Sass</h3>
+<h3 id="sass-5">Sass</h3>
 <p>Changes to our source Sass files and compiled CSS.</p>
 <ul>
 <li>Removed <code>hover</code>, <code>hover-focus</code>, <code>plain-hover-focus</code>, and <code>hover-focus-active</code> mixins. Use regular CSS syntax for these moving forward. <a href="https://github.com/twbs/bootstrap/pull/28267">See #28267</a>.</li>
@@ -776,7 +799,7 @@
 <li>The <code>box-shadow()</code> mixin now better supports <code>none</code> and <code>null</code> with multiple arguments. Now you can pass multiple arguments with either value and get the expected output. <a href="https://github.com/twbs/bootstrap/pull/30394">See #30394</a>.</li>
 <li>Each <code>border-radius()</code> mixin now has a default value. You can now call these mixins without specifying a border radius value and the <code>$border-radius</code> variable will be used. <a href="https://github.com/twbs/bootstrap/pull/31571">See #31571</a></li>
 </ul>
-<h3 id="javascript-1">JavaScript</h3>
+<h3 id="javascript-2">JavaScript</h3>
 <p>Changes to our source and compiled JavaScript files.</p>
 <ul>
 <li>Dropped jQuery dependency and rewrote plugins to be in regular JavaScript.</li>
@@ -917,7 +940,7 @@
 <ul>
 <li>Unlike the old <code>.sr-only-focusable</code>, which only worked in combination with <code>.sr-only</code>, <code>.sr-only-focusable</code> can be used as a standalone class without <code>.sr-only</code>. <a href="https://github.com/twbs/bootstrap/pull/28720">See #28720</a>.</li>
 </ul>
-<h3 id="utilities-4">Utilities</h3>
+<h3 id="utilities-5">Utilities</h3>
 <h3 id="grid">Grid</h3>
 <ul>
 <li>Decreased the number of responsive order utilities per breakpoint. The highest order utility with a number now is <code>.order-5</code> instead of <code>.order-12</code>. <a href="https://github.com/twbs/bootstrap/pull/28874">See #28874</a>.</li>
@@ -952,11 +975,11 @@
       <li class="d-inline-block ms-3"><a href="/docs/5.0/about/overview/">About</a></li>
     </ul>
     <p class="mb-0">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p class="mb-0">Currently v5.0.0-beta1. Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    <p class="mb-0">Currently v5.0.0-beta2. Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
   </div>
 </footer>
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-rSP2cyvaRMIk1/veBvxu4tR6nrlK6KN5Y9b0/1qiUcwiyTDnyQABKhdc7r3sEr9D" crossorigin="anonymous"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
